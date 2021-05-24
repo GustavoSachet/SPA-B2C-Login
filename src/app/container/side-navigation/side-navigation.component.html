@@ -1,0 +1,67 @@
+<div class="dashbord">
+  <div *ngIf="!isAuthenticated" class="user">
+    <img src="../assets/user.svg" alt="user" />
+    <h3>Guest</h3>
+    <p>{{ userId.toString() }}</p>
+  </div>
+  <div *ngIf="isAuthenticated" class="user">
+    <img src="../assets/avatar.png" alt="user" />
+    <h3>{{ username }}</h3>
+    <p>Pro Member</p>
+  </div>
+  <div *ngIf="!isAuthenticated" class="links">
+    <a class="link" (click)="signIn()">
+      <img src="../assets/login.svg" alt="" />
+      <h2>Login</h2>
+    </a>
+  </div>
+  <div *ngIf="isAuthenticated" class="links">
+    <a class="link" (click)="signOut()">
+      <img src="../assets/logout.svg" alt="" />
+      <h2>Logout</h2>
+    </a>
+    <a class="link" (click)="signOut()">
+      <img src="../assets/logout.svg" alt="" />
+      <h2>Logout</h2>
+    </a>
+  </div>
+  <div class="pro">
+    <h2>Join for free games.</h2>
+    <img src="../assets/controller.png" alt="" />
+  </div>
+</div>
+<!-- <div class="games">
+  <div class="status">
+    <h1>Active Games</h1>
+    <input type="text" />
+  </div>
+  <div class="cards">
+    <div class="card">
+      <img src="../assets/assassins.png" alt="" />
+      <div class="card-info">
+        <h2>Assassin's Creed Valhalla</h2>
+        <p>PS5 Verson</p>
+        <div class="progress"></div>
+      </div>
+      <h2 class="percentage">60%</h2>
+    </div>
+    <div class="card">
+      <img src="../assets/sackboy.png" alt="" />
+      <div class="card-info">
+        <h2>Sackboy</h2>
+        <p>PS5 Verson</p>
+        <div class="progress"></div>
+      </div>
+      <h2 class="percentage">60%</h2>
+    </div>
+    <div class="card">
+      <img src="../assets/spiderman.png" alt="" />
+      <div class="card-info">
+        <h2>Spiderman</h2>
+        <p>PS5 Verson</p>
+        <div class="progress"></div>
+      </div>
+      <h2 class="percentage">60%</h2>
+    </div>
+  </div>
+</div> -->

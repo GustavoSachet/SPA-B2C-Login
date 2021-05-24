@@ -1,0 +1,62 @@
+main {
+  font-family: "Nunito", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+  min-height: 100vh;
+  /* background: linear-gradient(to left top, #46d8bd, #42d6ec); */
+  background: linear-gradient(to right top, #480072, #005780);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  background: white;
+  min-height: 80vh;
+  width: 85%;
+  background: linear-gradient(
+    to right ,
+    rgba(190, 240, 255, 0.5),
+    rgba(255, 255, 255, 0.2)
+  );
+  border-radius: 1rem;
+  z-index: 2;
+  backdrop-filter: blur(1rem);
+  display: flex;
+}
+
+.circle1,
+.circle2 {
+  background: white;
+  backdrop-filter: blur(2rem);
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  /* background: linear-gradient(
+    to left top,
+    rgba(220, 220, 220, 0.4),
+    rgba(220, 220, 220, 0.1)
+  ); */
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0)
+  );
+  height: 40vh;
+  width: 40vh;
+  top: 15%;
+  right: 2%;
+}
+
+.circle2 {
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0)
+  );
+  height: 30vh;
+  width: 30vh;
+  bottom: 5%;
+  right: 10%;
+}
